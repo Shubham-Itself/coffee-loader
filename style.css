@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #efb54a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.cup{
+    position: relative;
+    width: 14rem;
+    height: 18rem;
+    border: 0.6rem solid #efb54a;
+    background: url(./coffee.png);
+    box-shadow: 0rem 0rem 0rem 0.6rem white;
+    border-radius: 0rem 0rem 7rem 7rem;
+    background-repeat: repeat-x;
+    background-position: 0rem 14rem;
+    animation: fill 5s linear infinite ;
+    
+}
+h1{
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    color: mediumpurple;
+    font-family: sans-serif ;
+    
+}
+
+@media (min-width:360px) and (max-width:489px){
+    h1{
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.handle{
+    height: 7rem;
+    width: 4rem;
+    background-color: transparent;
+    border: 0.6rem solid white;
+    position: absolute;
+    left: 13.4rem;
+    border-radius: 0rem 2.5rem 8rem 0rem;
+}
+
+@keyframes fill{
+    0%{
+        background-position: 0rem 14rem;
+
+    }
+
+    20%{
+        background-position: -45rem 10rem;
+    }
+
+    40%{
+        background-position: -90rem 5rem;
+
+    }
+    80%{
+        background-position: -135rem 4rem;
+
+    }
+    100%{
+        background-position: -80rem 14rem;
+    }
+    
+}
+
+
